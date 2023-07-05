@@ -2,9 +2,11 @@ project:
   type: website
   output-dir: docs
 
+
 website:
   title: "Bohan Zhang"
   page-footer: "Copyright 2023, Bohan Zhang"
+  favicon: profile.jpg
   #page-navigation: false
 
   navbar:
