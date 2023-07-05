@@ -7,7 +7,6 @@ website:
   title: "Bohan Zhang"
   page-footer: "Copyright 2023, Bohan Zhang"
   favicon: profile.jpg
-  #page-navigation: false
 
   navbar:
     left:
