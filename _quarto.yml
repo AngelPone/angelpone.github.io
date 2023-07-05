@@ -14,8 +14,8 @@ website:
         text: Home
       - text: Publications
         href: publications
-      - about.qmd
       - software.qmd
+      - about.qmd
     tools:
       - icon: github
         href: https://github.com/angelpone
