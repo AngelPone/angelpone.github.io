@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Bohan Zhang"
+  page-footer: "Copyright 2023, Bohan Zhang"
+  #page-navigation: false
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Publications
+        href: publications
+      - about.qmd
+      - software.qmd
+    tools:
+      - icon: github
+        href: https://github.com/angelpone
+      - icon: twitter
+        href: https://twitter.com/zhangbhangel
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: false
+
+
+

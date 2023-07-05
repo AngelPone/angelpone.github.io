@@ -1,0 +1,23 @@
+---
+title: "Bohan Zhang"
+about:
+  template: trestles
+  image: profile.jpg
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/zhangbhangel
+    - icon: github
+      text: github
+      href: https://github.com/angelpone
+    - icon: mailbox
+      text: mail
+      href: mailto:zhangbohan@buaa.edu.cn
+---
+
+
+Ph.D. student in Statistics
+
+[School of Economics and Management](https://semen.buaa.edu.cn/)
+
+[Beihang University](https://buaa.edu.cn)

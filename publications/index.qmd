@@ -1,0 +1,10 @@
+---
+title: Publications
+listing: 
+  type: custom
+  template: listing.ejs
+  sort-ui: [date]
+  filter-ui: true
+  categories: numbered
+---
+
