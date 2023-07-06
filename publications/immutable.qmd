@@ -1,7 +1,7 @@
 ---
 title: Optimal reconciliation with immutable forecasts
 date: 2022-11-14
-author: Bohan Zhang, Yanfei Kang, Anastasios Panagiotelis, Feng Li
+author: Bohan Zhang, Yanfei Kang, Anastasios Panagiotelis and Feng Li
 reference: Zhang, B., Kang, Y., Panagiotelis, A., & Li, F. (2022). Optimal reconciliation with immutable forecasts. European Journal of Operational Research, 308(2), 650–660.
 doi: 10.1016/j.ejor.2022.11.035
 code: https://github.com/angelpone/chf

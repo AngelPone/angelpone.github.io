@@ -53,3 +53,18 @@ padding: 5px 5px 3px 5px;
 /* .badge:hover {
     opacity: 1;
   } */
+
+.quarto-title .quarto-categories .quarto-tags {
+    padding: 0.25em 0.75em;
+    font-size: .65em;
+    text-transform: uppercase;
+    border: solid 1px;
+    border-radius: 0.25rem;
+    opacity: 1;
+}
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading,
+#title-block-header.quarto-title-block.default .abstract .abstract-title
+{
+    opacity: 1;
+    font-weight: 1000;
+}
