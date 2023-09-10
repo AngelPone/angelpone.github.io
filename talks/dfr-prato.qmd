@@ -1,17 +1,12 @@
 ---
-title: Optimal reconciliation with immutable forecasts
-date: 2022-11-14
-author: Bohan Zhang, Yanfei Kang, Anastasios Panagiotelis and Feng Li
-reference: Zhang, B., Kang, Y., Panagiotelis, A., & Li, F. (2022). Optimal reconciliation with immutable forecasts. European Journal of Operational Research, 308(2), 650–660.
-doi: 10.1016/j.ejor.2022.11.035
-code: https://github.com/angelpone/chf
-categories: Articles
+title: Discrete Forecast Reconciliation
+date: 2023-09-06
+venue: "[IIF Workshop on Forecast Reconciliation](https://robjhyndman.com/prato2023/), Monash Prato Centre, Prato, Italy"
+slides: "dfr-prato.pdf"
+paper: dfr
 abstract: >
     The practical importance of coherent forecasts in hierarchical forecasting has inspired many studies on forecast reconciliation. Under this approach, base forecasts are produced for every series in the hierarchy and are subsequently adjusted to be coherent in a second reconciliation step. Reconciliation methods have been shown to improve forecast accuracy but will generally adjust the base forecast of every series. However, in an operational context, it is sometimes necessary or beneficial to keep forecasts of some variables unchanged after forecast reconciliation. In this paper, we formulate a reconciliation methodology that keeps forecasts of a pre-specified subset of variables unchanged or “immutable”. In contrast to existing approaches, these immutable forecasts need not all come from the same level of a hierarchy, and our method can also be applied to grouped hierarchies. We prove that our approach preserves unbiasedness in base forecasts. Our method can also account for correlations between base forecasting errors and ensure the non-negativity of forecasts. We also perform empirical experiments, including an application to a large-scale online retailer’s sales, to assess our proposed methodology’s impacts.
-keywords: 
-    - Forecasting
-    - Hierarchical time series
-    - Constrained optimization
-    - Unbiasedness
-    - Online retail
 ---
+
+
+

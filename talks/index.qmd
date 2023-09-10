@@ -1,0 +1,12 @@
+---
+title: Talks
+listing: 
+  type: table
+  sort-ui: false
+  filter-ui: true
+  sort: "date desc"
+  fields: [date, title, venue]
+  field-display-names:
+    venue: "Venue"
+---
+

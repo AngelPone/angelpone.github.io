@@ -1,0 +1,14 @@
+---
+title: "Hierarchical forecasting: applications in complex scenarios"
+date: 2023-08-31
+venue: Virtual, Monash NUMBATs 
+slides: "numbats2308.pdf"
+paper: 
+  - dfr
+  - immutable
+abstract: > 
+    Forecast reconciliation is a state-of-art framework for hierarchical time series forecasting. Nevertheless, numerous challenges emerge when implementing it in real-world hierarchies characterized by highly diverse time series patterns. We consider two prevalent practical scenarios. The first scenario pertains to a retail product hierarchy, encompassing both fast-moving and intermittent time series. We propose an variant to the conventional reconciliation approach that keeps forecasts of a pre-speciﬁed subset of variables unchanged or “immutable”. The second scenario involves situations where all time series are discrete-valued, prompting the development of a discrete forecast reconciliation method.
+---
+
+
+

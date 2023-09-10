@@ -1,0 +1,60 @@
+<div class="quarto-title-meta">
+  $if(date)$
+  <div>
+    <div class="quarto-title-meta-heading">date</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">$date$</p>
+    </div>
+  </div>
+  $endif$
+
+
+  
+  $if(slides)$
+  <div>
+    <div class="quarto-title-meta-heading">SLIDES</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://bohan-zhang.com/pdf/$slides$"><i class="fa fa-link"></i></a>
+      </p>
+    </div>
+  </div>
+  $endif$
+
+
+$if(venue)$
+  <div>
+    <div class="quarto-title-meta-heading">VENUE</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">
+        $venue$
+      </p>
+    </div>
+  </div>
+$endif$
+
+
+
+$if(paper)$
+    <div>
+        <div class="quarto-title-meta-heading">PAPER</div>
+        <div class="quarto-title-meta-contents">
+        <p class="doi">
+            $for(paper)$
+            <a href="https://bohan-zhang.com/publications/$paper$.html"><i class="fa fa-link"></i></a>
+            $endfor$
+        </p>
+        </div>
+    </div>
+$endif$
+</div>
+
+$if(abstract)$
+<div>
+  <div class="abstract">
+    <div class="abstract-title">$labels.abstract$</div>
+    $abstract$
+  </div>
+</div>
+$endif$
+

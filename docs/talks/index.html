@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Bohan Zhang, Yanfei Kang, Anastasios Panagiotelis and Feng Li">
-<meta name="dcterms.date" content="2022-11-14">
-<meta name="keywords" content="Forecasting, Hierarchical time series, Constrained optimization, Unbiasedness, Online retail">
 
-<title>Bohan Zhang - Optimal reconciliation with immutable forecasts</title>
+<title>Bohan Zhang - Talks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../profile.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,7 +64,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-venue',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -127,67 +157,91 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Optimal reconciliation with immutable forecasts</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Articles</div>
-  </div>
-  </div>
-
-
-
-
-
-    <div>
-    <div class="quarto-title-meta-heading">AUTHORS</div>
-    <div class="quarto-title-meta-contents">
-             <p>Bohan Zhang, Yanfei Kang, Anastasios Panagiotelis and Feng Li </p>
-          </div>
-  </div>
-  <div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 14, 2022</p>
-    </div>
-  </div>
-  
-    
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/10.1016/j.ejor.2022.11.035">10.1016/j.ejor.2022.11.035</a>
-      </p>
-    </div>
-  </div>
-  </div>
-  
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
-    <p>The practical importance of coherent forecasts in hierarchical forecasting has inspired many studies on forecast reconciliation. Under this approach, base forecasts are produced for every series in the hierarchy and are subsequently adjusted to be coherent in a second reconciliation step. Reconciliation methods have been shown to improve forecast accuracy but will generally adjust the base forecast of every series. However, in an operational context, it is sometimes necessary or beneficial to keep forecasts of some variables unchanged after forecast reconciliation. In this paper, we formulate a reconciliation methodology that keeps forecasts of a pre-specified subset of variables unchanged or “immutable”. In contrast to existing approaches, these immutable forecasts need not all come from the same level of a hierarchy, and our method can also be applied to grouped hierarchies. We prove that our approach preserves unbiasedness in base forecasts. Our method can also account for correlations between base forecasting errors and ensure the non-negativity of forecasts. We also perform empirical experiments, including an application to a large-scale online retailer’s sales, to assess our proposed methodology’s impacts.</p>
-  </div>
+<h1 class="title">Talks</h1>
 </div>
 
 
+<div class="quarto-title-meta">
+  
 
-<div class="quarto-title-meta-heading">Keywords</div>
-<div class="quarto-title">
-<div class="quarto-categories">
-    <div class="quarto-tags">Forecasting</div>
-    <div class="quarto-tags">Hierarchical time series</div>
-    <div class="quarto-tags">Constrained optimization</div>
-    <div class="quarto-tags">Unbiasedness</div>
-    <div class="quarto-tags">Online retail</div>
-  </div>
+  
+  
+
+
+
+
 </div>
+
 
 </header>
 
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Venue
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1693951200000" data-listing-file-modified-sort="1694389459286" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Discrete Forecast Reconciliation" data-listing-filename-sort="dfr-prato.qmd">
+<td>
+<span class="listing-date">Sep 6, 2023</span>
+</td>
+<td>
+<a href="../talks/dfr-prato.html" class="title listing-title">Discrete Forecast Reconciliation</a>
+</td>
+<td>
+<span class="listing-venue"><a href="https://robjhyndman.com/prato2023/">IIF Workshop on Forecast Reconciliation</a>, Monash Prato Centre, Prato, Italy</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1693432800000" data-listing-file-modified-sort="1694388472742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Hierarchical forecasting: applications in complex scenarios" data-listing-filename-sort="numbats-2308.qmd">
+<td>
+<span class="listing-date">Aug 31, 2023</span>
+</td>
+<td>
+<a href="../talks/numbats-2308.html" class="title listing-title">Hierarchical forecasting: applications in complex scenarios</a>
+</td>
+<td>
+<span class="listing-venue">Virtual, Monash NUMBATs</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1687903200000" data-listing-file-modified-sort="1694389588657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Discrete Forecast Reconciliation" data-listing-filename-sort="dfr-isf2023.qmd">
+<td>
+<span class="listing-date">Jun 28, 2023</span>
+</td>
+<td>
+<a href="../talks/dfr-isf2023.html" class="title listing-title">Discrete Forecast Reconciliation</a>
+</td>
+<td>
+<span class="listing-venue">43rd International Symposium on Forecasting, the University of Virginia, Charlottesville, US</span>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

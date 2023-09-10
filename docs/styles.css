@@ -1,3 +1,4 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 /* css styles */
 a {
     text-decoration: none;
@@ -67,4 +68,10 @@ padding: 5px 5px 3px 5px;
 {
     opacity: 1;
     font-weight: 1000;
+}
+
+
+.listing-date {
+    width: 100px;
+    display: block;
 }

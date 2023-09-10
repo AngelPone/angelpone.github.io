@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/dfr-prato.html",
+      "/talks/numbats-2308.html",
+      "/talks/dfr-isf2023.html"
+    ]
+  },
+  {
     "listing": "/publications/index.html",
     "items": [
       "/publications/dfr.html",

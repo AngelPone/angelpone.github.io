@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "*.pdf"
 
 
 website:
@@ -15,7 +17,10 @@ website:
       - text: Publications
         href: publications
       - software.qmd
+      - text: Talks
+        href: talks
       - about.qmd
+      
     tools:
       - icon: github
         href: https://github.com/angelpone
