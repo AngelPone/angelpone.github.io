@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-09-06">
+<meta name="dcterms.date" content="2021-06-29">
 
-<title>Bohan Zhang - Discrete Forecast Reconciliation</title>
+<title>Bohan Zhang - Optimal reconciliation with immutable forecasts from speciﬁc hierarchies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Discrete Forecast Reconciliation</h1>
+<h1 class="title">Optimal reconciliation with immutable forecasts from speciﬁc hierarchies</h1>
 </div>
 
 
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">date</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 6, 2023</p>
+      <p class="date">June 29, 2021</p>
     </div>
   </div>
   
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">SLIDES</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://bohan-zhang.com/pdf/dfr-prato.pdf"><i class="fa fa-link"></i></a>
+        <a href="https://bohan-zhang.com/pdf/chf-isf2021.pdf"><i class="fa fa-link"></i></a>
       </p>
     </div>
   </div>
@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">VENUE</div>
     <div class="quarto-title-meta-contents">
       <p class="date">
-        <a href="https://robjhyndman.com/prato2023/">IIF Workshop on Forecast Reconciliation</a>, Monash Prato Centre, Prato, Italy
+        41st International Symposium on Forecasting, Virtual
       </p>
     </div>
   </div>
@@ -164,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="quarto-title-meta-heading">PAPER</div>
         <div class="quarto-title-meta-contents">
         <p class="doi">
-                        <a href="https://bohan-zhang.com/publications/dfr.html"><i class="fa fa-link"></i></a>
+                        <a href="https://bohan-zhang.com/publications/immutable.html"><i class="fa fa-link"></i></a>
                     </p>
         </div>
     </div>
@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
   <div class="abstract">
     <div class="abstract-title">Abstract</div>
-    <p>While forecast reconciliation has seen great success for real valued data, the method has not yet been comprehensively extended to the discrete case. This paper defines and develops a formal discrete forecast reconciliation framework based on optimising scoring rules using quadratic programming. The proposed framework produces coherent joint probabilistic forecasts for count hierarchical time series. Two discrete reconciliation algorithms are proposed and compared to generalisations of the top-down and bottom-up approaches to count data. Two simulation experiments and two empirical examples are conducted to validate that the proposed reconciliation algorithms improve forecast accuracy. The empirical applications are to forecast criminal offences in Washington D.C. and the exceedance of thresholds in agespecific mortality rates in Australia. Compared to the top-down and bottom-up approaches, the proposed framework shows superior performance in both simulations and empirical studies.</p>
+    <p>The practical importance of coherent forecasts in hierarchical forecasting has inspired many studies on forecast reconciliation. Under this approach, so-called base forecasts are produced for every series in the hierarchy and are subsequently adjusted to be coherent in a second reconciliation step. Reconciliation methods have been shown to improve forecast accuracy, but will, in general, adjust the base forecast of every series. However, in an operational context, it is sometimes necessary or beneﬁcial to keep forecasts of some variables unchanged after forecast reconciliation. In this paper, we formulate reconciliation methodology that keeps forecasts of a pre-speciﬁed subset of variables unchanged or “immutable”. In contrast to existing approaches, these immutable forecasts need not all come from the same level of a hierarchy, and our method can also be applied to grouped hierarchies. We prove that our approach preserves unbiasedness in base forecasts. Our method can also account for correlations between base forecasting errors and ensure non-negativity of forecasts. We also perform empirical experiments, including an application to sales of a large scale online retailer, to assess the impacts of our proposed methodology.</p>
   </div>
 </div>
 

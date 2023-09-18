@@ -1,0 +1,12 @@
+---
+title: Optimal reconciliation with immutable forecasts from speciﬁc hierarchies
+date: 2021-06-29
+venue: "41st International Symposium on Forecasting, Virtual"
+slides: "chf-isf2021.pdf"
+paper: immutable
+abstract: >
+    The practical importance of coherent forecasts in hierarchical forecasting has inspired many studies on forecast reconciliation. Under this approach, so-called base forecasts are produced for every series in the hierarchy and are subsequently adjusted to be coherent in a second reconciliation step. Reconciliation methods have been shown to improve forecast accuracy, but will, in general, adjust the base forecast of every series. However, in an operational context, it is sometimes necessary or beneﬁcial to keep forecasts of some variables unchanged after forecast reconciliation. In this paper, we formulate reconciliation methodology that keeps forecasts of a pre-speciﬁed subset of variables unchanged or “immutable”. In contrast to existing approaches, these immutable forecasts need not all come from the same level of a hierarchy, and our method can also be applied to grouped hierarchies. We prove that our approach preserves unbiasedness in base forecasts. Our method can also account for correlations between base forecasting errors and ensure non-negativity of forecasts. We also perform empirical experiments, including an application to sales of a large scale online retailer, to assess the impacts of our proposed methodology.
+---
+
+
+
