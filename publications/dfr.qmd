@@ -1,10 +1,10 @@
 ---
 title: Discrete Forecast Reconciliation
 date: 2023-06-02
-reference: Zhang, B., Panagiotelis, A., Li, F., & Kang, Y. (2023). Discrete forecast reconciliation. arXiv.
+reference: Bohan Zhang, Anastasios Panagiotelis and Yanfei Kang. (2023). Discrete forecast reconciliation. arXiv.
 doi: 10.48550/arXiv.2305.18809
 categories: Working papers
-author: Bohan Zhang, Anastasios Panagiotelis, Feng Li and Yanfei Kang
+author: Bohan Zhang, Anastasios Panagiotelis and Yanfei Kang
 code: https://github.com/angelpone/DiscreteRecon
 abstract: >
   While forecast reconciliation has seen great success for real valued data, the method has not yet been comprehensively extended to the discrete case. This paper defines and develops a formal discrete forecast reconciliation framework based on optimising scoring rules using quadratic programming. The proposed framework produces coherent joint probabilistic forecasts for count hierarchical time series. Two discrete reconciliation algorithms are proposed and compared to generalisations of the top-down and bottom-up approaches to count data. Two simulation experiments and two empirical examples are conducted to validate that the proposed reconciliation algorithms improve forecast accuracy. The empirical applications are to forecast criminal offences in Washington D.C. and the exceedance of thresholds in age-specific mortality rates in Australia. Compared to the top-down and bottom-up approaches, the proposed framework shows superior performance in both simulations and empirical studies.
