@@ -1,0 +1,77 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+/* css styles */
+a {
+    text-decoration: none;
+}
+
+a.badge.badge-red {
+    color: #ed0707;
+}
+  
+a.badge.badge-pink {
+    background: #e83e8c;
+}
+
+a.badge.badge-blue {
+    background: #6c757d;
+}
+
+.badge-large {
+    font-size: 18px !important;
+    text-transform: none !important;
+    padding: 5px 5px 3px 5px;
+    text-transform: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+.badge {
+    text-decoration: none;
+    background: #e0e3e5;
+    /* font-size: 12.75px; */
+    display: inline-block;
+    line-height: 1;
+    padding: 4px 7px 3px 7px;
+    color: #f8f6f6;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.badge {
+    border-radius: 15px;
+    /* opacity: .75; */
+}
+
+.badge-small {
+/* font-size: 11.25px; */
+padding: 5px 5px 3px 5px;
+}
+
+/* .badge:hover {
+    opacity: 1;
+  } */
+
+.quarto-title .quarto-categories .quarto-tags {
+    padding: 0.25em 0.75em;
+    font-size: .65em;
+    text-transform: uppercase;
+    border: solid 1px;
+    border-radius: 0.25rem;
+    opacity: 1;
+}
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading,
+#title-block-header.quarto-title-block.default .abstract .abstract-title
+{
+    opacity: 1;
+    font-weight: 1000;
+}
+
+
+.listing-date {
+    width: 100px;
+    display: block;
+}
