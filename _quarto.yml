@@ -35,8 +35,6 @@ format:
       dark: darkly
     css: styles.css
     toc: false
-    template-partials: 
-      - title-metadata.html
     author-title: AUTHORS
 
 
