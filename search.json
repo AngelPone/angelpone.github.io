@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\nBohan Zhang, Anastasios Panagiotelis, Han Li (2024). Constructing hierarchical time series through clustering: Is there an optimal way for forecasting? arXiv. https://arxiv.org/abs/2404.06064.\nDOI\nCODE\n\n\nBohan Zhang, Anastasios Panagiotelis and Yanfei Kang. (2023). Discrete forecast reconciliation. arXiv.\nDOI\nCODE\n\n\nBohan Zhang, Yanfei Kang, Anastasios Panagiotelis and Feng Li (2023). Optimal reconciliation with immutable forecasts. European Journal of Operational Research, 308(2), 650–660.\nDOI\nCODE\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "software.html",
     "href": "software.html",
     "title": "Software",
@@ -7,25 +14,18 @@
     "text": "pyhts\nDiscreteRecon"
   },
   {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nVenue\n\n\n\n\n\n\nApr 19, 2024\n\n\nOptimal reconciliation with immutable forecasts\n\n\n第二届中国青年统计学家论坛，徐州，中国\n\n\n\n\nSep 6, 2023\n\n\nDiscrete Forecast Reconciliation\n\n\nIIF Workshop on Forecast Reconciliation, Monash Prato Centre, Prato, Italy\n\n\n\n\nAug 31, 2023\n\n\nHierarchical forecasting: applications in complex scenarios\n\n\nVirtual, Monash NUMBATs\n\n\n\n\nJun 28, 2023\n\n\nDiscrete Forecast Reconciliation\n\n\n43rd International Symposium on Forecasting, the University of Virginia, Charlottesville, US\n\n\n\n\nJun 29, 2021\n\n\nOptimal reconciliation with immutable forecasts from speciﬁc hierarchies\n\n\n41st International Symposium on Forecasting, Virtual\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bohan Zhang",
     "section": "",
     "text": "Ph.D. student in Statistics\nSchool of Economics and Management\nBeihang University"
-  },
-  {
-    "objectID": "publications/index.html",
-    "href": "publications/index.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\nBohan Zhang, Anastasios Panagiotelis, Han Li (2024). Constructing hierarchical time series through clustering: Is there an optimal way for forecasting? arXiv. https://arxiv.org/abs/2404.06064. DOI CODE\n\n\nBohan Zhang, Anastasios Panagiotelis and Yanfei Kang. (2023). Discrete forecast reconciliation. arXiv. DOI CODE\n\n\nBohan Zhang, Yanfei Kang, Anastasios Panagiotelis and Feng Li (2023). Optimal reconciliation with immutable forecasts. European Journal of Operational Research, 308(2), 650–660. DOI CODE\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Talks",
-    "section": "",
-    "text": "Date\n\n\nTitle\n\n\nVenue\n\n\n\n\n\n\nSep 6, 2023\n\n\nDiscrete Forecast Reconciliation\n\n\nIIF Workshop on Forecast Reconciliation, Monash Prato Centre, Prato, Italy\n\n\n\n\nAug 31, 2023\n\n\nHierarchical forecasting: applications in complex scenarios\n\n\nVirtual, Monash NUMBATs\n\n\n\n\nJun 28, 2023\n\n\nDiscrete Forecast Reconciliation\n\n\n43rd International Symposium on Forecasting, the University of Virginia, Charlottesville, US\n\n\n\n\n\nJun 29, 2021\n\n\nOptimal reconciliation with immutable forecasts from speciﬁc hierarchies\n\n\n41st International Symposium on Forecasting, Virtual\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
