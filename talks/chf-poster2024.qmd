@@ -3,6 +3,6 @@ title: Optimal reconciliation with immutable forecasts
 date: 2024-04-19
 venue: 第二届中国青年统计学家论坛，徐州，中国
 slides: "chf-poster.pdf"
-paper: chf
+paper: immutable
 abstract: > 
 ---
