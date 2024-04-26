@@ -1,13 +1,9 @@
 <ol class="list" reversed>
     <% for (const item of items) { %>
       <li <%= metadataAttrs(item) %>>
-        <a href="<%- item.path %>" class="listing-reference"><%= item.reference %></a>
-        <% if (item.doi) { %>
-        <a href="https://doi.org/<%= item.doi %>" class="badge badge-small badge-blue">DOI</a>
-        <% } %>
-        <% if (item.code) { %>
-          <a href="<%= item.code %>" class="badge badge-small badge-pink">CODE</a>
-        <% } %>
+        <a href="<%- item.path %>" class="listing-reference"><%= item.reference %></a> 
+        <% if (item.doi) { %><a href="https://doi.org/<%= item.doi %>" class="badge badge-small badge-blue">DOI</a><% } %>
+        <% if (item.code) { %> <a href="<%= item.code %>" class="badge badge-small badge-pink">CODE</a> <% } %>
       </li>
     <% } %>
 </ol>
