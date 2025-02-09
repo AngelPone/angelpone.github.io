@@ -1,20 +1,21 @@
 [
   {
-    "listing": "/publications/index.html",
-    "items": [
-      "/publications/hierarchy.html",
-      "/publications/dfr.html",
-      "/publications/immutable.html"
-    ]
-  },
-  {
     "listing": "/talks/index.html",
     "items": [
+      "/talks/hierarchy-isf2024.html",
       "/talks/chf-poster2024.html",
       "/talks/dfr-prato.html",
       "/talks/numbats-2308.html",
       "/talks/dfr-isf2023.html",
       "/talks/chf-isf2021.html"
+    ]
+  },
+  {
+    "listing": "/publications/index.html",
+    "items": [
+      "/publications/hierarchy.html",
+      "/publications/dfr.html",
+      "/publications/immutable.html"
     ]
   }
 ]

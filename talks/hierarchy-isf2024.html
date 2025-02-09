@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-07-03">
 
-<title>Bohan Zhang - Talks</title>
+<title>Bohan Zhang - Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../profile.jpg" rel="icon" type="image/jpeg">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-venue',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -191,19 +132,49 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Talks</h1>
+<h1 class="title">Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?</h1>
 </div>
 
 
 <div class="quarto-title-meta">
+    <div>
+    <div class="quarto-title-meta-heading">date</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 3, 2024</p>
+    </div>
+  </div>
   
 
   
+    <div>
+    <div class="quarto-title-meta-heading">SLIDES</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://bohan-zhang.com/pdf/hierarchy-2407.pdf"><i class="fa fa-link"></i></a>
+      </p>
+    </div>
+  </div>
   
 
+  <div>
+    <div class="quarto-title-meta-heading">VENUE</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">
+        Dijon, France
+      </p>
+    </div>
+  </div>
 
 
 
+    <div>
+        <div class="quarto-title-meta-heading">PAPER</div>
+        <div class="quarto-title-meta-contents">
+        <p class="doi">
+                        <a href="https://bohan-zhang.com/publications/hierarchy.html"><i class="fa fa-link"></i></a>
+                    </p>
+        </div>
+    </div>
 </div>
 
 
@@ -213,101 +184,7 @@ window.Quarto = {
 
 
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Venue
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1719936000000" data-listing-file-modified-sort="1739070576966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?" data-listing-filename-sort="hierarchy-isf2024.qmd">
-<td>
-<span class="listing-date">Jul 3, 2024</span>
-</td>
-<td>
-<a href="../talks/hierarchy-isf2024.html" class="title listing-title">Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?</a>
-</td>
-<td>
-<span class="listing-venue">Dijon, France</span>
-</td>
-</tr>
-<tr data-index="1" data-listing-date-sort="1713456000000" data-listing-file-modified-sort="1714109262045" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Optimal reconciliation with immutable forecasts" data-listing-filename-sort="chf-poster2024.qmd">
-<td>
-<span class="listing-date">Apr 19, 2024</span>
-</td>
-<td>
-<a href="../talks/chf-poster2024.html" class="title listing-title">Optimal reconciliation with immutable forecasts</a>
-</td>
-<td>
-<span class="listing-venue">第二届中国青年统计学家论坛，徐州，中国</span>
-</td>
-</tr>
-<tr data-index="2" data-listing-date-sort="1693929600000" data-listing-file-modified-sort="1714099853598" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Discrete Forecast Reconciliation" data-listing-filename-sort="dfr-prato.qmd">
-<td>
-<span class="listing-date">Sep 6, 2023</span>
-</td>
-<td>
-<a href="../talks/dfr-prato.html" class="title listing-title">Discrete Forecast Reconciliation</a>
-</td>
-<td>
-<span class="listing-venue"><a href="https://robjhyndman.com/prato2023/">IIF Workshop on Forecast Reconciliation</a>, Monash Prato Centre, Prato, Italy</span>
-</td>
-</tr>
-<tr data-index="3" data-listing-date-sort="1693411200000" data-listing-file-modified-sort="1714099853598" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Hierarchical forecasting: applications in complex scenarios" data-listing-filename-sort="numbats-2308.qmd">
-<td>
-<span class="listing-date">Aug 31, 2023</span>
-</td>
-<td>
-<a href="../talks/numbats-2308.html" class="title listing-title">Hierarchical forecasting: applications in complex scenarios</a>
-</td>
-<td>
-<span class="listing-venue">Virtual, Monash NUMBATs</span>
-</td>
-</tr>
-<tr data-index="4" data-listing-date-sort="1687881600000" data-listing-file-modified-sort="1714099853598" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Discrete Forecast Reconciliation" data-listing-filename-sort="dfr-isf2023.qmd">
-<td>
-<span class="listing-date">Jun 28, 2023</span>
-</td>
-<td>
-<a href="../talks/dfr-isf2023.html" class="title listing-title">Discrete Forecast Reconciliation</a>
-</td>
-<td>
-<span class="listing-venue">43rd International Symposium on Forecasting, the University of Virginia, Charlottesville, US</span>
-</td>
-</tr>
-<tr data-index="5" data-listing-date-sort="1624896000000" data-listing-file-modified-sort="1714099853598" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Optimal reconciliation with immutable forecasts from speciﬁc hierarchies" data-listing-filename-sort="chf-isf2021.qmd">
-<td>
-<span class="listing-date">Jun 29, 2021</span>
-</td>
-<td>
-<a href="../talks/chf-isf2021.html" class="title listing-title">Optimal reconciliation with immutable forecasts from speciﬁc hierarchies</a>
-</td>
-<td>
-<span class="listing-venue">41st International Symposium on Forecasting, Virtual</span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
