@@ -1,0 +1,8 @@
+---
+title: "Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?"
+date: 2024-07-03
+venue: Dijon, France
+slides: "hierarchy-2407.pdf"
+paper: hierarchy
+abstract: > 
+---

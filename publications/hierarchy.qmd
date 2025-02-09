@@ -1,16 +1,16 @@
 ---
 title: "Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?"
-date: 2024-04-07
+date: 2024-11-13
 author: Bohan Zhang, Anastasios Panagiotelis and Han Li
-reference: "Bohan Zhang, Anastasios Panagiotelis, Han Li (2024). Constructing hierarchical time series through clustering: Is there an optimal way for forecasting? arXiv. https://arxiv.org/abs/2404.06064."
+reference: "Bohan Zhang, Anastasios Panagiotelis, Han Li (2024). Constructing hierarchical time series through clustering: Is there an optimal way for forecasting? International Journal of Forecasting. In Press."
 code: https://github.com/angelpone/project_hierarchy
-doi: 10.48550/arXiv.2404.06064
-categories: Working papers
+doi: 10.1016/j.ijforecast.2024.10.002
+categories: Articles
 abstract: >
     Forecast reconciliation has attracted significant research interest in recent years, with most studies taking the hierarchy of time series as given. We extend existing work that uses time series clustering to construct hierarchies, with the goal of improving forecast accuracy, in three ways. First, we investigate multiple approaches to clustering, including not only different clustering algorithms, but also the way time series are represented and how distance between time series is defined. We find that cluster-based hierarchies lead to improvements in forecast accuracy relative to two-level hierarchies. Second, we devise an approach based on random permutation of hierarchies, keeping the structure of the hierarchy fixed, while time series are randomly allocated to clusters. In doing so, we find that improvements in forecast accuracy that accrue from using clustering do not arise from grouping together similar series but from the structure of the hierarchy. Third, we propose an approach based on averaging forecasts across hierarchies constructed using different clustering methods, that is shown to outperform any single clustering method. All analysis is carried out on two benchmark datasets and a simulated dataset. Our findings provide new insights into the role of hierarchy construction in forecast reconciliation and offer valuable guidance on forecasting practice.
 keywords: 
-    - Forecasting
     - Forecast reconciliation
+    - Hierarchical time series
     - Clustering
     - Hierarchy construction
     - Forecast combination
