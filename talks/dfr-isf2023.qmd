@@ -1,7 +1,8 @@
 ---
 title: Discrete Forecast Reconciliation
 date: 2023-06-28
-venue: 43rd International Symposium on Forecasting, the University of Virginia, Charlottesville, US
+conference: 43rd International Symposium on Forecasting
+place: the University of Virginia, Charlottesville, US
 slides: "dfr-isf2023.pdf"
 paper: dfr
 abstract: >

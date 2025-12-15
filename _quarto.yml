@@ -1,14 +1,15 @@
 project:
   type: website
+  pre-render:
+    - cv/cv.sh
   output-dir: docs
   resources:
     - "*.pdf"
     - CNAME
 
-
 website:
   title: "Bohan Zhang"
-  page-footer: "Copyright 2023, Bohan Zhang"
+  page-footer: "Copyright 2023-2025, Bohan Zhang"
   favicon: profile.jpg
 
   navbar:
@@ -20,8 +21,10 @@ website:
       - software.qmd
       - text: Talks
         href: talks
+      - text: CV
+        href: cv/cv.pdf
       - about.qmd
-      
+
     tools:
       - icon: github
         href: https://github.com/angelpone
@@ -30,12 +33,9 @@ website:
 
 format:
   html:
-    theme: 
+    theme:
       light: flatly
       dark: darkly
     css: styles.css
     toc: false
     author-title: AUTHORS
-
-
-
