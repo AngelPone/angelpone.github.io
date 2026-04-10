@@ -6,6 +6,7 @@ project:
   resources:
     - "*.pdf"
     - CNAME
+    - "activity/*.json"
 
 website:
   title: "Bohan Zhang"

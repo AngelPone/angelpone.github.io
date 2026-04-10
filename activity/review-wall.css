@@ -1,0 +1,400 @@
+/* Commit Wall Styles */
+.level2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-wall-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review-wall-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292f;
+}
+
+.review-legend {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  color: #57606a;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legend-color.accept { background-color: #238636; }
+.legend-color.minor { background-color: #3fb950; }
+.legend-color.major { background-color: #d29922; }
+.legend-color.reject { background-color: #da3633; }
+.legend-color.none { background-color: #ebedf0; }
+
+.review-wall {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.week-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.day-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: #ebedf0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.day-cell.out-of-year {
+  opacity: 0; /* 让不属于当年的占位格子不可见，只保留框架 */
+}
+
+.day-cell:hover {
+  transform: scale(1.2);
+  outline: 2px solid #0969da;
+  outline-offset: 2px;
+  z-index: 10;
+}
+
+.day-cell.active-accept { background-color: #238636; }
+.day-cell.active-minor { background-color: #3fb950; }
+.day-cell.active-major { background-color: #d29922; }
+.day-cell.active-reject { background-color: #da3633; }
+
+/* Highlight styles for date ranges */
+.day-cell.in-range {
+  outline: 2px dashed #0969da;
+  outline-offset: 1px;
+}
+
+.day-cell.range-start {
+  border-radius: 2px 0 0 2px;
+}
+
+.day-cell.range-end {
+  border-radius: 0 2px 2px 0;
+}
+
+/* Tooltip */
+.review-tooltip {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.review-tooltip.visible {
+  opacity: 1;
+}
+
+.tooltip-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tooltip-review-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.year-navigation {
+  display: flex;
+  flex-direction: column;   /* 从上到下排列 */
+  align-items: center;      /* 水平居中对齐 */
+  justify-content: center;
+  gap: 4px;                 /* 按钮和年份文字之间的间距，可自行微调 */
+  margin: 10px 0;           /* 给整个组件上下留点呼吸空间 */
+}
+
+.year-btn {
+  background: transparent;
+  border: none;
+  color: #8c959f;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 8px;
+  transition: color 0.2s ease;
+}
+
+.year-btn:hover:not(:disabled) {
+  color: #24292f; /* 鼠标悬停时变深色 */
+}
+
+.year-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.year-label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #24292f;
+  line-height: 1;
+}
+
+/* 如果有多条记录，在它们之间加一条非常暗的分割线区分 */
+.tooltip-review-line + .tooltip-review-line {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 8px;
+}
+
+.tooltip-journal {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.tooltip-duration {
+  color: #8c959f;
+  font-size: 11px;
+  margin-left: 4px;
+}
+.tooltip-review-line .tooltip-result {
+  align-self: center; 
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tooltip-result {
+  border-radius: 4px;
+  padding: 0px 2px;
+}
+
+.tooltip-result.accept {
+  background-color: #238636;
+  color: white;
+}
+
+.tooltip-result.minor {
+  background-color: #3fb950;
+  color: white;
+}
+
+.tooltip-result.major {
+  background-color: #d29922;
+  color: black;
+}
+
+.tooltip-result.reject {
+  background-color: #da3633;
+  color: white;
+}
+
+/* Stats Section */
+.review-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.stat-card {
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stat-number.accept { color: #238636; }
+.stat-number.minor { color: #3fb950; }
+.stat-number.major { color: #d29922; }
+.stat-number.reject { color: #da3633; }
+.stat-number.total { color: #0969da; }
+
+.stat-label {
+  font-size: 14px;
+  color: #57606a;
+}
+
+/* Month labels */
+.month-labels {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #57606a;
+}
+
+.month-label {
+  width: 12px;
+  text-align: center;
+}
+
+/* Day of week labels */
+.wall-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items:center;
+  justify-content: center;
+}
+
+.day-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #57606a;
+  padding-top: 25px;
+}
+
+.day-label {
+  height: 12px;
+  line-height: 12px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .review-wall-title { color: #c9d1d9; }
+  .review-legend { color: #8b949e; }
+  .day-cell { background-color: #161b22; }
+  .day-cell.active-accept { background-color: #238636; }
+  .day-cell.active-minor { background-color: #3fb950; }
+  .day-cell.active-major { background-color: #d29922; }
+  .day-cell.active-reject { background-color: #da3633; }
+  .stat-card {
+    background: #21262d;
+    border-color: #30363d;
+  }
+  .stat-label { color: #8b949e; }
+  .day-labels { color: #8b949e; }
+}
+
+/* Review List */
+.review-list {
+  margin-top: 40px;
+}
+
+.review-list h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #24292f;
+}
+
+.review-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  transition: box-shadow 0.2s ease;
+}
+
+.review-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-date-badge {
+  min-width: 100px;
+  text-align: center;
+}
+
+.review-date {
+  font-size: 12px;
+  color: #57606a;
+  margin-bottom: 4px;
+}
+
+.review-result-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.review-result-badge.accept {
+  background-color: #dafbe1;
+  color: #1a7f37;
+}
+
+.review-result-badge.minor {
+  background-color: #cae8ff;
+  color: #0969da;
+}
+
+.review-result-badge.major {
+  background-color: #fff8c5;
+  color: #7d4e00;
+}
+
+.review-result-badge.reject {
+  background-color: #ffebe9;
+  color: #cf222e;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-journal {
+  font-size: 14px;
+  font-weight: 600;
+  color: #24292f;
+  margin-bottom: 4px;
+}
+
+.review-paper-title {
+  font-size: 13px;
+  color: #57606a;
+  font-style: italic;
+}
+
+.review-duration {
+  font-size: 12px;
+  color: #57606a;
+  margin-top: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .review-list h3 { color: #c9d1d9; }
+  .review-item {
+    background: #21262d;
+    border-color: #30363d;
+  }
+  .review-journal { color: #c9d1d9; }
+  .review-paper-title { color: #8b949e; }
+  .review-duration { color: #8b949e; }
+  .review-date { color: #8b949e; }
+}
