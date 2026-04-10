@@ -1,0 +1,7 @@
+---
+title: DiscreteRecon
+full: Discrete Forecast Reconciliation. 
+description: Construct, forecast and reconcile hierarchical integer-valued time series.
+link: "https://github.com/AngelPone/pyhts"
+type: R Package
+---

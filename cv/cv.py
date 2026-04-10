@@ -3,6 +3,17 @@ from datetime import date
 
 inspect = json.loads(open("./.quarto/cv/inspect.json").read())
 
+software = [
+    {
+        "title": val["metadata"]["title"],
+        "full": val["metadata"]["full"],
+        "description": val["metadata"]["description"],
+        "link": val["metadata"]["link"],
+        "type": val["metadata"]["type"],
+    }
+    for key, val in inspect["fileInformation"].items()
+    if "/software/" in key and not key.endswith("index.qmd")
+]
 
 publications = [
     val["metadata"]["reference"]
@@ -49,6 +60,6 @@ for idx, item in enumerate(conferences):
     }
 
 
-output = {"publications": publications, "conferences": conferences}
+output = {"publications": publications, "conferences": conferences, "software": software}
 with open("./.quarto/cv/data.json", "w") as f:
     f.write(json.dumps(output, indent=2))

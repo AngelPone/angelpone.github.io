@@ -2,7 +2,7 @@
 title: "Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?"
 date: 2024-11-13
 author: Bohan Zhang, Anastasios Panagiotelis and Han Li
-reference: "Bohan Zhang, Anastasios Panagiotelis, Han Li (2024). Constructing hierarchical time series through clustering: Is there an optimal way for forecasting? International Journal of Forecasting. In Press."
+reference: "Bohan Zhang, Anastasios Panagiotelis, Han Li (2025). Constructing hierarchical time series through clustering: Is there an optimal way for forecasting? International Journal of Forecasting, 41(3), 1022-1036."
 code: https://github.com/angelpone/project_hierarchy
 doi: 10.1016/j.ijforecast.2024.10.002
 categories: Articles

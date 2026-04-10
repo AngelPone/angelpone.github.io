@@ -1,34 +1,39 @@
 #set page(margin: (x: 5em))
 #import "@preview/fontawesome:0.6.0": fa-icon
 
-#let fai(name) = {
-  set text(size: 0.66em)
-  fa-icon(name)
-}
+#let fai(name) = fa-icon(name, top-edge: "baseline")
+
+  
+#set enum(numbering: "[1]")
 
 #let section-title(name) = {
-  rect(inset: 5pt, stroke: none, text(size: 13pt, name, weight: "bold"))
+  rect(inset: 0em, stroke: none, text(size: 1.2em, name, weight: "bold"))
 }
 
 #let data = json("../.quarto/cv/data.json")
 
-#grid(columns: (1fr, 5fr), row-gutter: 10pt,
-[= CV],[], 
+#text(size: 2em)[*Bohan Zhang*]
 
+#grid(columns: (1fr, 5fr), inset: ((top: 1em, bottom: 1em), (top: 1em, bottom: 1em, left: 0em, right: 0em)),
+grid.hline(),
 // Publications
 section-title("Publications"),
 [
   #show "Bohan Zhang": it => text(weight: "bold", it)
-  #enum(..data.publications, numbering: "[1]")
+  #enum(..data.publications)
 ],
 grid.hline(),
-
 // Education
 [#section-title("Education")],[
 #table(
   inset: (x, y) => {
-    if (y == 6) { (top: 5pt, bottom: -4pt)} else {
-      (top: 5pt, bottom: 5pt)
+    if (y == 3) { (top: 0em, bottom: 1em) } 
+    else if (y == 4) {
+      (top: 1em, bottom: 0.8em)
+    } else if (y==6) {
+      (top: 0em, bottom: 0em)
+    } else {
+      (top: 0pt, bottom: 0.8em)
     }
   },
   align: (center+horizon, left, left),
@@ -58,20 +63,37 @@ section-title("Talks"),
     $it.text.replace("th", "")^("th")$
   }
   table(
-  columns: (4em, auto, auto), stroke: none,
-  align: (center, left, left),
+  columns: (3em, 1fr, 4em), stroke: none,
+  align: (left, left, left),
   ..data.conferences.map(x => {
-    let inset = (x: 0pt, top: 5pt, bottom: 5pt)
+    let inset = (x: 0pt, top: 0em, bottom: 0.7em)
+    let inset2 = (x: 0pt, top: 0em, bottom: 1em)
     if x.year == "2021" {
-      inset.bottom = -5pt
+      inset2.bottom = 0em
     }
     (table.cell(x.year, inset: inset), 
-    table.cell(x.conference + " (" + x.place + ") ", inset: inset), 
-    table.cell(text(gray, x.date), inset: inset))
-    
+    table.cell([*#x.conference*], inset: inset), 
+    table.cell(text(gray, x.date), inset: inset),
+    table.cell([], inset: inset2),
+    table.cell(x.place, inset: inset2), 
+    table.cell([], inset: inset2))
   }).flatten()  
   )
  }, grid.hline(),
-section-title("Software")
 
+// Software
+section-title("Software"),
+{
+show "Python Package": it => {fai("python")}
+show "R Package": it => {fai("r-project")}
+enum(..data.software.map(x => {
+  [*#x.title*: #x.full #h(1fr) #x.type #link(x.link)[#fai("github")] \ #x.description]
+}))
+},
+grid.hline(),
+
+section-title("Experiences"),
+[],
+section-title("Employment"),
+[]
 )
