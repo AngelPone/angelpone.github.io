@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Bohan Zhang, Anastasios Panagiotelis and Han Li">
-<meta name="dcterms.date" content="2024-11-13">
-<meta name="keywords" content="Forecast reconciliation, Hierarchical time series, Clustering, Hierarchy construction, Forecast combination">
 
-<title>Constructing hierarchical time series through clustering: Is there an optimal way for forecasting? – Bohan Zhang</title>
+<title>Activity – Bohan Zhang</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,6 +76,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="review-wall.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -299,78 +297,433 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Articles</div>
-  </div>
-  </div>
+<h1 class="title">Activity</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-
-    <div>
-    <div class="quarto-title-meta-heading">AUTHORS</div>
-    <div class="quarto-title-meta-contents">
-             <p>Bohan Zhang, Anastasios Panagiotelis and Han Li </p>
-          </div>
-  </div>
-  <div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 13, 2024</p>
-    </div>
-  </div>
+    
   
     
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/10.1016/j.ijforecast.2024.10.002">10.1016/j.ijforecast.2024.10.002</a>
-      </p>
-    </div>
-  </div>
   </div>
   
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
-    <p>Forecast reconciliation has attracted significant research interest in recent years, with most studies taking the hierarchy of time series as given. We extend existing work that uses time series clustering to construct hierarchies, with the goal of improving forecast accuracy, in three ways. First, we investigate multiple approaches to clustering, including not only different clustering algorithms, but also the way time series are represented and how distance between time series is defined. We find that cluster-based hierarchies lead to improvements in forecast accuracy relative to two-level hierarchies. Second, we devise an approach based on random permutation of hierarchies, keeping the structure of the hierarchy fixed, while time series are randomly allocated to clusters. In doing so, we find that improvements in forecast accuracy that accrue from using clustering do not arise from grouping together similar series but from the structure of the hierarchy. Third, we propose an approach based on averaging forecasts across hierarchies constructed using different clustering methods, that is shown to outperform any single clustering method. All analysis is carried out on two benchmark datasets and a simulated dataset. Our findings provide new insights into the role of hierarchy construction in forecast reconciliation and offer valuable guidance on forecasting practice.</p>
-  </div>
-</div>
 
-
-
-<div class="quarto-title-meta-heading">Keywords</div>
-<div class="quarto-title">
-<div class="quarto-categories">
-    <div class="quarto-tags">Forecast reconciliation</div>
-    <div class="quarto-tags">Hierarchical time series</div>
-    <div class="quarto-tags">Clustering</div>
-    <div class="quarto-tags">Hierarchy construction</div>
-    <div class="quarto-tags">Forecast combination</div>
-  </div>
-</div>
 
 </header>
 
 
+<section id="peer-review-activity" class="level2">
+<h2 data-anchor-id="peer-review-activity">Peer Review Activity</h2>
+<div class="review-stats">
+<div class="stat-card">
+<div class="stat-number total">
+<p>0</p>
+</div>
+<div class="stat-label">
+<p>Total Reviews</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-number accept">
+<p>0</p>
+</div>
+<div class="stat-label">
+<p>Accept</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-number minor">
+<p>0</p>
+</div>
+<div class="stat-label">
+<p>Minor Revision</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-number major">
+<p>0</p>
+</div>
+<div class="stat-label">
+<p>Major Revision</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-number reject">
+<p>0</p>
+</div>
+<div class="stat-label">
+<p>Reject</p>
+</div>
+</div>
+</div>
+<div class="wall-wrapper">
+<div class="year-navigation">
+<button id="prev-year-btn" class="year-btn">▲</button>
+<span id="current-year-label" class="year-label">2024</span>
+<button id="next-year-btn" class="year-btn">▼</button>
+</div>
+<div class="review-wall" id="review-wall">
+</div>
+</div>
+<div id="review-tooltip" class="review-tooltip">
+  <div class="tooltip-title"></div>
+  <div class="tooltip-info"></div>
+</div>
+
+<script>
+(function() {
+  // Configuration
+  const RESULT_COLORS = {
+    'Accept': 'accept',
+    'Minor Revision': 'minor',
+    'Major Revision': 'major',
+    'Reject': 'reject'
+  };
+  
+  const RESULT_CLASS = {
+    'Accept': 'active-accept',
+    'Minor Revision': 'active-minor',
+    'Major Revision': 'active-major',
+    'Reject': 'active-reject'
+  };
+  
+  let allReviews = [];
+  let currentDisplayYear = new Date().getFullYear(); 
+  let minYear = currentDisplayYear;
+  let maxYear = currentDisplayYear;
+  let reviewCache = {};
+
+  function parseDate(dateStr) { return new Date(dateStr); }
+  
+  function formatDate(date) {
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  }
+  
+  function daysBetween(date1, date2) {
+    const oneDay = 24 * 60 * 60 * 1000;
+    return Math.round(Math.abs((date2 - date1) / oneDay));
+  }
+  
+  function getDatesInRange(startDate, endDate) {
+    const dates = [];
+    let current = new Date(startDate);
+    const end = new Date(endDate);
+    while (current <= end) {
+      dates.push(new Date(current));
+      current.setDate(current.getDate() + 1);
+    }
+    return dates;
+  }
+  
+  function dateKey(date) {
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  }
+  
+  async function loadReviewData() {
+    try {
+      const response = await fetch('review-data.json');
+      const data = await response.json();
+      return data.reviews || [];
+    } catch (error) {
+      console.error('Error loading review data:', error);
+      return [];
+    }
+  }
+
+  function buildDataCache(reviews) {
+    reviewCache = {}; 
+    
+    reviews.forEach(review => {
+      const endDateStr = dateKey(parseDate(review.end_date));
+      const datesInRange = getDatesInRange(parseDate(review.start_date), parseDate(review.end_date));
+      
+      if (!reviewCache[endDateStr]) {
+        reviewCache[endDateStr] = { endReviews: [], overlappingReviews: [] };
+      }
+      reviewCache[endDateStr].endReviews.push(review);
+
+      datesInRange.forEach(date => {
+        const dKey = dateKey(date);
+        if (!reviewCache[dKey]) {
+          reviewCache[dKey] = { endReviews: [], overlappingReviews: [] };
+        }
+        reviewCache[dKey].overlappingReviews.push(review);
+      });
+    });
+  }
+
+  function buildReviewWall(reviews, targetYear) {
+    const wall = document.getElementById('review-wall');
+    if (!wall) return;
+    
+    wall.innerHTML = '';
+    
+    let minDate = new Date(targetYear, 0, 1);
+    let maxDate = new Date(targetYear, 11, 31);
+    minDate.setDate(minDate.getDate() - minDate.getDay());
+    
+    // Generate weeks
+    const current = new Date(minDate);
+    
+    while (current <= maxDate) {
+      const weekCol = document.createElement('div');
+      weekCol.className = 'week-column';
+      
+      for (let day = 0; day < 7; day++) {
+        const cell = document.createElement('div');
+        cell.className = 'day-cell';
+        const id = dateKey(current);
+        cell.dataset.id = id;
+        
+        if (current.getFullYear() !== targetYear) {
+          cell.classList.add('out-of-year'); 
+        }
+
+        const key = dateKey(current);
+        
+        const cacheData = reviewCache[id];
+        if (cacheData && cacheData.endReviews.length > 0) {
+          const review = cacheData.endReviews[0];
+          cell.classList.add(RESULT_CLASS[review.result]);
+        }
+        
+        cell.addEventListener('mouseenter', handleMouseEnter);
+        cell.addEventListener('mouseleave', handleMouseLeave);
+        cell.addEventListener('mousemove', handleMouseMove);
+        
+        weekCol.appendChild(cell);
+        current.setDate(current.getDate() + 1);
+      }
+      wall.appendChild(weekCol);
+    }
+  }
+
+  function updateDashboard() {
+    const yearLabel = document.getElementById('current-year-label');
+    if (yearLabel) yearLabel.textContent = currentDisplayYear;
+
+    const prevBtn = document.getElementById('prev-year-btn');
+    const nextBtn = document.getElementById('next-year-btn');
+    if (prevBtn) prevBtn.disabled = currentDisplayYear <= minYear;
+    if (nextBtn) nextBtn.disabled = currentDisplayYear >= maxYear;
+
+    const currentYearReviews = allReviews.filter(r => {
+        const startY = parseDate(r.start_date).getFullYear();
+        const endY = parseDate(r.end_date).getFullYear();
+        return startY <= currentDisplayYear && endY >= currentDisplayYear;
+    });
+
+    buildReviewWall(allReviews, currentDisplayYear); 
+    buildReviewList(currentYearReviews); 
+    updateStats(currentYearReviews);   
+  }
+
+  function setupNavigation() {
+    const prevBtn = document.getElementById('prev-year-btn');
+    const nextBtn = document.getElementById('next-year-btn');
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        if (currentDisplayYear > minYear) {
+          currentDisplayYear--;
+          updateDashboard();
+        }
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        if (currentDisplayYear < maxYear) {
+          currentDisplayYear++;
+          updateDashboard();
+        }
+      });
+    }
+  }
+  
+  function handleMouseEnter(e) {
+    const cell = e.target;
+    const id = cell.dataset.id; // 获取 ID
+    const date = parseDate(id);
+    const tooltip = document.getElementById('review-tooltip');
+    tooltip.querySelector('.tooltip-title').textContent = formatDate(date);
+    
+    const cacheData = reviewCache[id] || { endReviews: [], overlappingReviews: [] };
+    
+    if (cacheData.endReviews.length > 0) {
+      let infoHtml = '';
+      cacheData.endReviews.forEach(review => {
+        const start_date = parseDate(review.start_date);
+        const end_date = parseDate(review.end_date);
+        const duration = daysBetween(start_date, end_date);
+        const badgeClass = RESULT_COLORS[review.result];
+        
+        // 动态生成每一行的 HTML 结构
+        infoHtml += `
+          <div class="tooltip-review-line">
+            <span class="tooltip-journal">${review.journal} <span class="tooltip-duration">(${duration} days)</span></span>
+            <span class="tooltip-result ${badgeClass}">${review.result}</span>
+          </div>
+        `;
+      });
+      
+      // 4. 插入多行内容
+      tooltip.querySelector('.tooltip-info').innerHTML = infoHtml;
+      cacheData.endReviews.forEach(review => {
+        highlightDateRange(review.start_date, review.end_date, true);
+      });
+      tooltip.classList.add('visible');
+    } else if (cacheData.overlappingReviews.length > 0) {
+      
+      const reviewing = cacheData.overlappingReviews; 
+      tooltip.querySelector('.tooltip-title').textContent += " reviewing";
+      tooltip.querySelector('.tooltip-info').innerHTML = reviewing.map(x => x.journal).join("<br/>");
+      tooltip.classList.add('visible');
+    } else {
+      tooltip.querySelector('.tooltip-info').textContent = 'No review activity';
+      tooltip.classList.add('visible');
+    }
+  }
+  
+  function handleMouseLeave(e) {
+    const cell = e.target;
+    const id = cell.dataset.id;
+    const tooltip = document.getElementById('review-tooltip');
+    
+    const cacheData = reviewCache[id] || { endReviews: [], overlappingReviews: [] };
+    
+    // 取消高亮
+    if (cacheData.endReviews.length > 0) {
+      cacheData.endReviews.forEach(review => {
+        highlightDateRange(review.start_date, review.end_date, false);
+      });
+    }
+    
+    tooltip.classList.remove('visible');
+  }
+  
+  function handleMouseMove(e) { 
+    const tooltip = document.getElementById('review-tooltip');
+    const x = e.clientX + 15;
+    const y = e.clientY + 15;
+    const rect = tooltip.getBoundingClientRect();
+    const finalX = x + rect.width > window.innerWidth ? x - rect.width - 30 : x;
+    const finalY = y + rect.height > window.innerHeight ? y - rect.height - 30 : y;
+    tooltip.style.left = finalX + 'px';
+    tooltip.style.top = finalY + 'px';
+  }
+  
+  function highlightDateRange(startDate, endDate, highlight) { 
+    const cells = document.querySelectorAll('.day-cell');
+    const start = dateKey(parseDate(startDate));
+    const end = dateKey(parseDate(endDate));
+    
+    cells.forEach(cell => {
+      const cellDate = cell.dataset.id;
+      if (cellDate >= start && cellDate <= end) {
+        if (highlight) {
+          cell.classList.add('in-range');
+          if (cellDate === start) cell.classList.add('range-start');
+          if (cellDate === end) cell.classList.add('range-end');
+        } else {
+          cell.classList.remove('in-range', 'range-start', 'range-end');
+        }
+      }
+    });
+  }
+  
+  function buildReviewList(reviews) {
+    const container = document.getElementById('review-list-container');
+    if (!container) return;
+    container.innerHTML = '';
+    
+    const sorted = [...reviews].sort((a, b) => parseDate(b.end_date) - parseDate(a.end_date));
+    
+    if (sorted.length === 0) {
+        container.innerHTML = '<div class="no-reviews">No review activity in this year.</div>';
+        return;
+    }
+
+    sorted.forEach(review => {
+      const item = document.createElement('div');
+      item.className = 'review-item';
+      const startDate = parseDate(review.start_date);
+      const endDate = parseDate(review.end_date);
+      const duration = daysBetween(startDate, endDate);
+      
+      item.innerHTML = `
+        <div class="review-date-badge">
+          <div class="review-date">${formatDate(endDate)}</div>
+          <span class="review-result-badge ${RESULT_COLORS[review.result]}">${review.result}</span>
+        </div>
+        <div class="review-content">
+          <div class="review-journal">${review.journal}</div>
+          <div class="review-paper-title">"${review.paper_title}"</div>
+          <div class="review-duration">📅 ${formatDate(startDate)} → ${formatDate(endDate)} · ${duration} days</div>
+        </div>
+      `;
+      container.appendChild(item);
+    });
+  }
+  
+  function updateStats(reviews) {
+    const counts = { 'Accept': 0, 'Minor Revision': 0, 'Major Revision': 0, 'Reject': 0 };
+    reviews.forEach(r => {
+      if (counts[r.result] !== undefined) counts[r.result]++;
+    });
+    
+    const totalEl = document.querySelector('.stat-number.total');
+    const acceptEl = document.querySelector('.stat-number.accept');
+    const minorEl = document.querySelector('.stat-number.minor');
+    const majorEl = document.querySelector('.stat-number.major');
+    const rejectEl = document.querySelector('.stat-number.reject');
+    
+    if (totalEl) totalEl.textContent = reviews.length;
+    if (acceptEl) acceptEl.textContent = counts['Accept'];
+    if (minorEl) minorEl.textContent = counts['Minor Revision'];
+    if (majorEl) majorEl.textContent = counts['Major Revision'];
+    if (rejectEl) rejectEl.textContent = counts['Reject'];
+  }
+  
+  async function init() {
+    allReviews = await loadReviewData();
+    
+    if (allReviews.length > 0) {
+      buildDataCache(allReviews);
+      allReviews.forEach(r => {
+        const startY = parseDate(r.start_date).getFullYear();
+        const endY = parseDate(r.end_date).getFullYear();
+        if (startY < minYear) minYear = startY;
+        if (endY > maxYear) maxYear = endY;
+      });
+    }
+
+    setupNavigation();
+    updateDashboard(); 
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 
 
+</section>
 
-</main> <!-- /main -->
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
