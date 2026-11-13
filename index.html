@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Bohan Zhang</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -33,17 +38,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="./profile.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-5bee7a6889446fd6a5e94f1401a9d9c5.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-35748ff49e402b6870edbdd924ffde10.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-5bee7a6889446fd6a5e94f1401a9d9c5.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8baff63ef4dbbe4e2ad41b32445bfb66.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b579ca3a7f7b5b7dc37dd4c847aec59a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-8baff63ef4dbbe4e2ad41b32445bfb66.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6bb3b1f5365e80ed509dae5ba6ebde88.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-f0205422b617dcfa61b4a221dd26c518.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-6bb3b1f5365e80ed509dae5ba6ebde88.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,12 +78,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -99,6 +107,7 @@ ul.task-list li input[type="checkbox"] {
       for (let i=0; i < toggles.length; i++) {
         const toggle = toggles[i];
         if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
           if (alternate) {
             toggle.classList.add("alternate");
           } else {
@@ -128,13 +137,19 @@ ul.task-list li input[type="checkbox"] {
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
       setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
         manageTransitions("body", false);
-        window.scrollTo(0, 1);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
         setTimeout(() => {
-          window.scrollTo(0, 0);
+          window.scrollTo(0, scrollY);
           manageTransitions("body", true);
         }, 40);
       }
@@ -228,6 +243,7 @@ ul.task-list li input[type="checkbox"] {
       // Read the current dark / light value
       let toAlternate = !hasAlternateSentinel();
       toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
@@ -242,15 +258,14 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Bohan Zhang</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -286,70 +301,302 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/angelpone" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/zhangbhangel" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/angelpone" title="" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/zhangbhangel" title="" class="quarto-navigation-tool px-1" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+    <a href="mailto:zhangbohan@buaa.edu.cn" title="" class="quarto-navigation-tool px-1" aria-label="Email"><i class="bi bi-envelope"></i></a>
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="profile.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Bohan Zhang</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://twitter.com/zhangbhangel" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">twitter</span>
-  </a>
-  <a href="https://github.com/angelpone" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">github</span>
-  </a>
-  <a href="mailto:zhangbohan@buaa.edu.cn" class="about-link" rel="" target="">
-    <i class="bi bi-mailbox"></i>
-     <span class="about-link-text">mail</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-
-<p>Ph.D.&nbsp;student in Statistics</p>
-<p><a href="https://semen.buaa.edu.cn/">School of Economics and Management</a></p>
-<p><a href="https://buaa.edu.cn">Beihang University</a></p>
+<main class="content column-page" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-</main></div>
+
+
+
+<div class="bz-home">
+  <!-- Hero Section -->
+  <section class="bz-hero">
+    <div class="bz-hero-bg-motif" aria-hidden="true">
+      <svg viewbox="0 0 600 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 165 C90 155, 150 120, 230 128 C310 136, 370 72, 460 64 C520 58, 560 36, 600 28 L600 105 C555 110, 515 124, 460 122 C370 118, 310 164, 230 162 C150 160, 90 175, 0 180 Z" fill="url(#bz-band)"></path>
+        <path d="M0 172 C90 164, 150 140, 230 145 C310 150, 370 95, 460 92 C520 90, 560 72, 600 66" stroke="url(#bz-line-main)" stroke-width="2.5" stroke-linecap="round"></path>
+        <path d="M0 190 C100 182, 165 170, 245 174 C325 178, 390 142, 475 136 C535 132, 570 118, 600 112" stroke="url(#bz-line-sub)" stroke-width="1.5" stroke-dasharray="5 5" stroke-linecap="round"></path>
+        <defs>
+          <lineargradient id="bz-band" x1="200" y1="20" x2="600" y2="190" gradientunits="userSpaceOnUse">
+            <stop offset="0%" stop-color="currentColor" stop-opacity="0.10"></stop>
+            <stop offset="100%" stop-color="currentColor" stop-opacity="0.01"></stop>
+          </lineargradient>
+          <lineargradient id="bz-line-main" x1="0" y1="172" x2="600" y2="66" gradientunits="userSpaceOnUse">
+            <stop offset="0%" stop-color="currentColor" stop-opacity="0.08"></stop>
+            <stop offset="100%" stop-color="currentColor" stop-opacity="0.45"></stop>
+          </lineargradient>
+          <lineargradient id="bz-line-sub" x1="0" y1="190" x2="600" y2="112" gradientunits="userSpaceOnUse">
+            <stop offset="0%" stop-color="currentColor" stop-opacity="0.05"></stop>
+            <stop offset="100%" stop-color="currentColor" stop-opacity="0.28"></stop>
+          </lineargradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="bz-hero-content">
+      <div class="bz-eyebrow-row">
+        <span class="bz-status-pill">
+          <span class="bz-status-dot"></span>
+          Research Fellow · Statistics &amp; Forecasting
+        </span>
+      </div>
+
+      <h1 class="bz-hero-title">Bohan Zhang</h1>
+
+      <p class="bz-hero-lead">
+        Research Fellow at <a href="https://www.monash.edu">Monash University</a>, working with
+        Professor <a href="https://anastasiospanagiotelis.netlify.com">Anastasios Panagiotelis</a>.
+        Previously completed my Ph.D. in Statistics (2025) at the
+        <a href="https://semen.buaa.edu.cn/">School of Economics and Management</a>,
+        <a href="https://buaa.edu.cn">Beihang University</a>.
+      </p>
+
+      <div class="bz-interest-tags">
+        <span class="bz-chip">Hierarchical Time Series</span>
+        <span class="bz-chip">Forecast Reconciliation</span>
+        <span class="bz-chip">Discrete &amp; Count Data</span>
+        <span class="bz-chip">Time Series Clustering</span>
+        <span class="bz-chip">Statistical Software</span>
+      </div>
+
+      <div class="bz-hero-actions">
+        <a href="publications/index.html" class="bz-btn bz-btn-primary">
+          <i class="bi bi-journal-richtext"></i> Publications
+        </a>
+        <a href="https://oss.bohan-zhang.com/pdf/cv.pdf" class="bz-btn bz-btn-secondary">
+          <i class="bi bi-file-earmark-person"></i> Curriculum Vitae
+        </a>
+        <div class="bz-social-strip">
+          <a href="https://github.com/angelpone" class="bz-icon-btn" aria-label="GitHub" title="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://twitter.com/zhangbhangel" class="bz-icon-btn" aria-label="Twitter / X" title="Twitter / X">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="mailto:zhangbohan@buaa.edu.cn" class="bz-icon-btn" aria-label="Email" title="Email">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bz-hero-portrait-wrap">
+      <div class="bz-portrait-card">
+        <img src="profile.jpg" alt="Portrait of Bohan Zhang" class="bz-portrait-img">
+        <div class="bz-portrait-caption">
+          <span class="bz-mono-label"><i class="bi bi-geo-alt"></i> Monash University · Melbourne</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Overview Grid -->
+  <section class="bz-bento-grid">
+    <!-- Featured Publications -->
+    <div class="bz-bento-card bz-bento-wide">
+      <div class="bz-card-header">
+        <div>
+          <span class="bz-section-kicker">Research Output</span>
+          <h2 class="bz-card-title no-anchor">Selected Publications</h2>
+        </div>
+        <a href="publications/index.html" class="bz-card-link">All papers <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="bz-mini-pub-list">
+        <a href="publications/hierarchy.html" class="bz-mini-pub-item">
+          <div class="bz-mini-pub-meta">
+            <span class="bz-year-pill">2025</span>
+            <span class="bz-venue-text">International Journal of Forecasting</span>
+          </div>
+          <div class="bz-mini-pub-title">Constructing hierarchical time series through clustering: Is there an optimal way for forecasting?</div>
+        </a>
+
+        <a href="publications/dfr.html" class="bz-mini-pub-item">
+          <div class="bz-mini-pub-meta">
+            <span class="bz-year-pill">2024</span>
+            <span class="bz-venue-text">European Journal of Operational Research</span>
+          </div>
+          <div class="bz-mini-pub-title">Discrete Forecast Reconciliation</div>
+        </a>
+
+        <a href="publications/immutable.html" class="bz-mini-pub-item">
+          <div class="bz-mini-pub-meta">
+            <span class="bz-year-pill">2023</span>
+            <span class="bz-venue-text">European Journal of Operational Research</span>
+          </div>
+          <div class="bz-mini-pub-title">Optimal reconciliation with immutable forecasts</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Position & Mentorship -->
+    <div class="bz-bento-card">
+      <div class="bz-card-header">
+        <div>
+          <span class="bz-section-kicker">Academic Community</span>
+          <h2 class="bz-card-title no-anchor">Position &amp; Mentorship</h2>
+        </div>
+        <a href="about.html" class="bz-card-link">About <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <ul class="bz-clean-list">
+        <li>
+          <i class="bi bi-briefcase"></i>
+          <div>
+            <strong>Research Fellow</strong><br>
+            <a href="https://www.monash.edu">Monash University</a>, working with Prof. <a href="https://anastasiospanagiotelis.netlify.com">Anastasios Panagiotelis</a>.
+          </div>
+        </li>
+        <li>
+          <i class="bi bi-mortarboard"></i>
+          <div>
+            <strong>Ph.D. in Statistics</strong><br>
+            <a href="https://buaa.edu.cn">Beihang University</a>, supervised by Prof. <a href="https://yanfei.site">Yanfei Kang</a>.
+          </div>
+        </li>
+        <li>
+          <i class="bi bi-diagram-3"></i>
+          <div>
+            <strong>Research Group</strong><br>
+            Trained in <a href="https://kllab.org">KLLAB</a> led by Prof. <a href="https://yanfei.site">Yanfei Kang</a> &amp; Assoc. Prof. <a href="https://feng.li">Feng Li.</a> 
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Open Source Software -->
+    <div class="bz-bento-card">
+      <div class="bz-card-header">
+        <div>
+          <span class="bz-section-kicker">Open Source</span>
+          <h2 class="bz-card-title no-anchor">Software Packages</h2>
+        </div>
+        <a href="software.html" class="bz-card-link">Explore <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="bz-mini-pkg-stack">
+        <a href="https://github.com/AngelPone/pyhts" class="bz-mini-pkg">
+          <div class="bz-mini-pkg-top">
+            <span class="bz-pkg-name">pyhts</span>
+            <span class="bz-lang-badge bz-lang-py">Python</span>
+          </div>
+          <p>Forecast reconciliation for cross-sectional &amp; temporal hierarchies.</p>
+        </a>
+
+        <a href="https://github.com/angelpone/DiscreteRecon" class="bz-mini-pkg">
+          <div class="bz-mini-pkg-top">
+            <span class="bz-pkg-name">DiscreteRecon</span>
+            <span class="bz-lang-badge bz-lang-r">R Package</span>
+          </div>
+          <p>Construct, forecast, and reconcile integer-valued hierarchical series.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Talks & Peer Review -->
+    <div class="bz-bento-card bz-bento-wide-sm">
+      <div class="bz-card-header">
+        <div>
+          <span class="bz-section-kicker">Dissemination &amp; Service</span>
+          <h2 class="bz-card-title no-anchor">Talks &amp; Peer Review</h2>
+        </div>
+      </div>
+      <div class="bz-dual-Links">
+        <a href="talks/index.html" class="bz-feature-tile">
+          <div class="bz-feature-icon"><i class="bi bi-easel2"></i></div>
+          <div>
+            <div class="bz-feature-title">Conference &amp; Seminar Talks</div>
+            <div class="bz-feature-desc">Presentations at ISF (2021, 2023, 2024), IIF Prato Workshop, Monash NUMBATs &amp; more.</div>
+          </div>
+          <i class="bi bi-chevron-right bz-tile-arrow"></i>
+        </a>
+
+        <a href="activity/index.html" class="bz-feature-tile">
+          <div class="bz-feature-icon bz-icon-teal"><i class="bi bi-grid-3x3-gap"></i></div>
+          <div>
+            <div class="bz-feature-title">Peer Review Activity Wall</div>
+            <div class="bz-feature-desc">Interactive calendar heatmap &amp; statistics tracking journal refereeing activity.</div>
+          </div>
+          <i class="bi bi-chevron-right bz-tile-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 </div>
- <!-- /main -->
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
       const i = window.document.createElement("i");
       i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
     }
     setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -392,13 +639,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -418,7 +666,8 @@ ul.task-list li input[type="checkbox"] {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -427,8 +676,69 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -442,6 +752,7 @@ ul.task-list li input[type="checkbox"] {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -604,44 +915,54 @@ ul.task-list li input[type="checkbox"] {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -740,17 +1061,39 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p>© 2023–2026 Bohan Zhang</p>
+</div>   
     <div class="nav-footer-center">
-<p>Copyright 2023-2026, Bohan Zhang</p>
-</div>
-    <div class="nav-footer-right">
       &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/angelpone">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/zhangbhangel">
+      <i class="bi bi-twitter-x" role="img" aria-label="X / Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:zhangbohan@buaa.edu.cn">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>
@@ -758,4 +1101,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

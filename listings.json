@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/software.html",
+    "items": [
+      "/software/pyhts.html",
+      "/software/dfr.html"
+    ]
+  },
+  {
     "listing": "/talks/index.html",
     "items": [
       "/talks/hierarchy-isf2024.html",

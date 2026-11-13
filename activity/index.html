@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Activity – Bohan Zhang</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -33,18 +38,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="../profile.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5bee7a6889446fd6a5e94f1401a9d9c5.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-35748ff49e402b6870edbdd924ffde10.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5bee7a6889446fd6a5e94f1401a9d9c5.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8baff63ef4dbbe4e2ad41b32445bfb66.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b579ca3a7f7b5b7dc37dd4c847aec59a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8baff63ef4dbbe4e2ad41b32445bfb66.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-75b394d010be75cff1f46a839e36d782.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-3437908811e368083fa0f5c689dea440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-75b394d010be75cff1f46a839e36d782.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,13 +78,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="review-wall.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -101,6 +108,7 @@ ul.task-list li input[type="checkbox"] {
       for (let i=0; i < toggles.length; i++) {
         const toggle = toggles[i];
         if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
           if (alternate) {
             toggle.classList.add("alternate");
           } else {
@@ -130,13 +138,19 @@ ul.task-list li input[type="checkbox"] {
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
       setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
         manageTransitions("body", false);
-        window.scrollTo(0, 1);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
         setTimeout(() => {
-          window.scrollTo(0, 0);
+          window.scrollTo(0, scrollY);
           manageTransitions("body", true);
         }, 40);
       }
@@ -230,6 +244,7 @@ ul.task-list li input[type="checkbox"] {
       // Read the current dark / light value
       let toAlternate = !hasAlternateSentinel();
       toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
@@ -244,15 +259,14 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Bohan Zhang</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -288,28 +302,33 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/angelpone" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/zhangbhangel" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/angelpone" title="" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/zhangbhangel" title="" class="quarto-navigation-tool px-1" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+    <a href="mailto:zhangbohan@buaa.edu.cn" title="" class="quarto-navigation-tool px-1" aria-label="Email"><i class="bi bi-envelope"></i></a>
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
+<main class="content column-page" id="quarto-document-content" tabindex="-1">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Activity</h1>
+<p class="subtitle lead">Peer review contributions and editorial service</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -321,59 +340,81 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="peer-review-activity" class="level2">
-<h2 data-anchor-id="peer-review-activity">Peer Review Activity</h2>
-<div class="review-stats">
-<div class="stat-card">
-<div class="stat-number total">
-<p>0</p>
+<div class="bz-activity-dashboard">
+  <div class="review-stats">
+    <div class="stat-card stat-total">
+      <div class="stat-number total">0</div>
+      <div class="stat-label">Total Reviews</div>
+    </div>
+    <div class="stat-card stat-accept">
+      <div class="stat-number accept">0</div>
+      <div class="stat-label">Accept</div>
+    </div>
+    <div class="stat-card stat-minor">
+      <div class="stat-number minor">0</div>
+      <div class="stat-label">Minor Revision</div>
+    </div>
+    <div class="stat-card stat-major">
+      <div class="stat-number major">0</div>
+      <div class="stat-label">Major Revision</div>
+    </div>
+    <div class="stat-card stat-reject">
+      <div class="stat-number reject">0</div>
+      <div class="stat-label">Reject</div>
+    </div>
+  </div>
+
+  <div class="bz-wall-card">
+    <div class="review-wall-header">
+      <div class="year-navigation">
+        <button id="prev-year-btn" class="year-btn" aria-label="Previous year">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <span id="current-year-label" class="year-label">2026</span>
+        <button id="next-year-btn" class="year-btn" aria-label="Next year">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="review-legend">
+        <span class="legend-item"><span class="legend-color none"></span> Idle</span>
+        <span class="legend-item"><span class="legend-color accept"></span> Accept</span>
+        <span class="legend-item"><span class="legend-color minor"></span> Minor</span>
+        <span class="legend-item"><span class="legend-color major"></span> Major</span>
+        <span class="legend-item"><span class="legend-color reject"></span> Reject</span>
+      </div>
+    </div>
+
+    <div class="wall-scroll-area">
+      <div class="wall-grid-layout">
+        <div class="day-labels" aria-hidden="true">
+          <div class="day-label"></div>
+          <div class="day-label">Mon</div>
+          <div class="day-label"></div>
+          <div class="day-label">Wed</div>
+          <div class="day-label"></div>
+          <div class="day-label">Fri</div>
+          <div class="day-label"></div>
+        </div>
+        <div class="wall-columns-wrap">
+          <div class="month-labels" id="month-labels"></div>
+          <div class="review-wall" id="review-wall"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="review-list">
+    <div class="bz-card-header" style="margin-bottom: 1rem;">
+      <div>
+        <span class="bz-section-kicker">Annual Log</span>
+        <h3 class="bz-card-title no-anchor" style="margin: 0;">Completed Referee Reports</h3>
+      </div>
+    </div>
+    <div id="review-list-container"></div>
+  </div>
 </div>
-<div class="stat-label">
-<p>Total Reviews</p>
-</div>
-</div>
-<div class="stat-card">
-<div class="stat-number accept">
-<p>0</p>
-</div>
-<div class="stat-label">
-<p>Accept</p>
-</div>
-</div>
-<div class="stat-card">
-<div class="stat-number minor">
-<p>0</p>
-</div>
-<div class="stat-label">
-<p>Minor Revision</p>
-</div>
-</div>
-<div class="stat-card">
-<div class="stat-number major">
-<p>0</p>
-</div>
-<div class="stat-label">
-<p>Major Revision</p>
-</div>
-</div>
-<div class="stat-card">
-<div class="stat-number reject">
-<p>0</p>
-</div>
-<div class="stat-label">
-<p>Reject</p>
-</div>
-</div>
-</div>
-<div class="wall-wrapper">
-<div class="year-navigation">
-<button id="prev-year-btn" class="year-btn">▲</button>
-<span id="current-year-label" class="year-label">2024</span>
-<button id="next-year-btn" class="year-btn">▼</button>
-</div>
-<div class="review-wall" id="review-wall">
-</div>
-</div>
+
 <div id="review-tooltip" class="review-tooltip">
   <div class="tooltip-title"></div>
   <div class="tooltip-info"></div>
@@ -381,38 +422,42 @@ ul.task-list li input[type="checkbox"] {
 
 <script>
 (function() {
-  // Configuration
   const RESULT_COLORS = {
     'Accept': 'accept',
     'Minor Revision': 'minor',
     'Major Revision': 'major',
     'Reject': 'reject'
   };
-  
+
   const RESULT_CLASS = {
     'Accept': 'active-accept',
     'Minor Revision': 'active-minor',
     'Major Revision': 'active-major',
     'Reject': 'active-reject'
   };
-  
+
+  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
   let allReviews = [];
-  let currentDisplayYear = new Date().getFullYear(); 
+  let currentDisplayYear = new Date().getFullYear();
   let minYear = currentDisplayYear;
   let maxYear = currentDisplayYear;
   let reviewCache = {};
 
-  function parseDate(dateStr) { return new Date(dateStr); }
-  
+  function parseDate(dateStr) {
+    const parts = String(dateStr).split('-').map(Number);
+    return new Date(parts[0], parts[1] - 1, parts[2]);
+  }
+
   function formatDate(date) {
     return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
   }
-  
+
   function daysBetween(date1, date2) {
     const oneDay = 24 * 60 * 60 * 1000;
     return Math.round(Math.abs((date2 - date1) / oneDay));
   }
-  
+
   function getDatesInRange(startDate, endDate) {
     const dates = [];
     let current = new Date(startDate);
@@ -423,11 +468,11 @@ ul.task-list li input[type="checkbox"] {
     }
     return dates;
   }
-  
+
   function dateKey(date) {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
   }
-  
+
   async function loadReviewData() {
     try {
       const response = await fetch('review-data.json');
@@ -440,12 +485,13 @@ ul.task-list li input[type="checkbox"] {
   }
 
   function buildDataCache(reviews) {
-    reviewCache = {}; 
-    
+    reviewCache = {};
     reviews.forEach(review => {
-      const endDateStr = dateKey(parseDate(review.end_date));
-      const datesInRange = getDatesInRange(parseDate(review.start_date), parseDate(review.end_date));
-      
+      const startDt = parseDate(review.start_date);
+      const endDt = parseDate(review.end_date);
+      const endDateStr = dateKey(endDt);
+      const datesInRange = getDatesInRange(startDt, endDt);
+
       if (!reviewCache[endDateStr]) {
         reviewCache[endDateStr] = { endReviews: [], overlappingReviews: [] };
       }
@@ -463,46 +509,62 @@ ul.task-list li input[type="checkbox"] {
 
   function buildReviewWall(reviews, targetYear) {
     const wall = document.getElementById('review-wall');
+    const monthLabelsEl = document.getElementById('month-labels');
     if (!wall) return;
-    
+
     wall.innerHTML = '';
-    
+    if (monthLabelsEl) monthLabelsEl.innerHTML = '';
+
     let minDate = new Date(targetYear, 0, 1);
     let maxDate = new Date(targetYear, 11, 31);
     minDate.setDate(minDate.getDate() - minDate.getDay());
-    
-    // Generate weeks
+
     const current = new Date(minDate);
-    
+    let lastLabeledMonth = -1;
+
     while (current <= maxDate) {
       const weekCol = document.createElement('div');
       weekCol.className = 'week-column';
-      
+
+      let weekMonthLabel = '';
       for (let day = 0; day < 7; day++) {
         const cell = document.createElement('div');
         cell.className = 'day-cell';
         const id = dateKey(current);
         cell.dataset.id = id;
-        
-        if (current.getFullYear() !== targetYear) {
-          cell.classList.add('out-of-year'); 
+
+        if (current.getFullYear() === targetYear && current.getDate() <= 7 && current.getMonth() !== lastLabeledMonth) {
+          weekMonthLabel = MONTHS[current.getMonth()];
+          lastLabeledMonth = current.getMonth();
         }
 
-        const key = dateKey(current);
-        
-        const cacheData = reviewCache[id];
-        if (cacheData && cacheData.endReviews.length > 0) {
-          const review = cacheData.endReviews[0];
-          cell.classList.add(RESULT_CLASS[review.result]);
+        if (current.getFullYear() !== targetYear) {
+          cell.classList.add('out-of-year');
+        } else {
+          const cacheData = reviewCache[id];
+          if (cacheData && cacheData.endReviews.length > 0) {
+            const review = cacheData.endReviews[0];
+            cell.classList.add(RESULT_CLASS[review.result]);
+          } else if (cacheData && cacheData.overlappingReviews.length > 0) {
+            cell.classList.add('active-reviewing');
+          }
         }
-        
+
         cell.addEventListener('mouseenter', handleMouseEnter);
         cell.addEventListener('mouseleave', handleMouseLeave);
         cell.addEventListener('mousemove', handleMouseMove);
-        
+
         weekCol.appendChild(cell);
         current.setDate(current.getDate() + 1);
       }
+
+      if (monthLabelsEl) {
+        const mSpan = document.createElement('div');
+        mSpan.className = 'month-col-label';
+        mSpan.textContent = weekMonthLabel;
+        monthLabelsEl.appendChild(mSpan);
+      }
+
       wall.appendChild(weekCol);
     }
   }
@@ -517,14 +579,13 @@ ul.task-list li input[type="checkbox"] {
     if (nextBtn) nextBtn.disabled = currentDisplayYear >= maxYear;
 
     const currentYearReviews = allReviews.filter(r => {
-        const startY = parseDate(r.start_date).getFullYear();
-        const endY = parseDate(r.end_date).getFullYear();
-        return startY <= currentDisplayYear && endY >= currentDisplayYear;
+      const endY = parseDate(r.end_date).getFullYear();
+      return endY === currentDisplayYear;
     });
 
-    buildReviewWall(allReviews, currentDisplayYear); 
-    buildReviewList(currentYearReviews); 
-    updateStats(currentYearReviews);   
+    buildReviewWall(allReviews, currentDisplayYear);
+    buildReviewList(currentYearReviews);
+    updateStats(currentYearReviews);
   }
 
   function setupNavigation() {
@@ -549,16 +610,17 @@ ul.task-list li input[type="checkbox"] {
       });
     }
   }
-  
+
   function handleMouseEnter(e) {
     const cell = e.target;
-    const id = cell.dataset.id; // 获取 ID
+    if (cell.classList.contains('out-of-year')) return;
+    const id = cell.dataset.id;
     const date = parseDate(id);
     const tooltip = document.getElementById('review-tooltip');
     tooltip.querySelector('.tooltip-title').textContent = formatDate(date);
-    
+
     const cacheData = reviewCache[id] || { endReviews: [], overlappingReviews: [] };
-    
+
     if (cacheData.endReviews.length > 0) {
       let infoHtml = '';
       cacheData.endReviews.forEach(review => {
@@ -566,91 +628,83 @@ ul.task-list li input[type="checkbox"] {
         const end_date = parseDate(review.end_date);
         const duration = daysBetween(start_date, end_date);
         const badgeClass = RESULT_COLORS[review.result];
-        
-        // 动态生成每一行的 HTML 结构
+
         infoHtml += `
           <div class="tooltip-review-line">
-            <span class="tooltip-journal">${review.journal} <span class="tooltip-duration">(${duration} days)</span></span>
+            <span class="tooltip-journal">${review.journal} <span class="tooltip-duration">(${duration}d)</span></span>
             <span class="tooltip-result ${badgeClass}">${review.result}</span>
           </div>
         `;
       });
-      
-      // 4. 插入多行内容
+
       tooltip.querySelector('.tooltip-info').innerHTML = infoHtml;
       cacheData.endReviews.forEach(review => {
         highlightDateRange(review.start_date, review.end_date, true);
       });
       tooltip.classList.add('visible');
     } else if (cacheData.overlappingReviews.length > 0) {
-      
-      const reviewing = cacheData.overlappingReviews; 
-      tooltip.querySelector('.tooltip-title').textContent += " reviewing";
-      tooltip.querySelector('.tooltip-info').innerHTML = reviewing.map(x => x.journal).join("<br/>");
+      const reviewing = cacheData.overlappingReviews;
+      tooltip.querySelector('.tooltip-title').textContent = formatDate(date) + ' · In Review';
+      tooltip.querySelector('.tooltip-info').innerHTML = reviewing.map(x => `<span class="tooltip-journal">${x.journal}</span>`).join('');
       tooltip.classList.add('visible');
     } else {
       tooltip.querySelector('.tooltip-info').textContent = 'No review activity';
       tooltip.classList.add('visible');
     }
   }
-  
+
   function handleMouseLeave(e) {
     const cell = e.target;
     const id = cell.dataset.id;
     const tooltip = document.getElementById('review-tooltip');
-    
+
     const cacheData = reviewCache[id] || { endReviews: [], overlappingReviews: [] };
-    
-    // 取消高亮
     if (cacheData.endReviews.length > 0) {
       cacheData.endReviews.forEach(review => {
         highlightDateRange(review.start_date, review.end_date, false);
       });
     }
-    
     tooltip.classList.remove('visible');
   }
-  
-  function handleMouseMove(e) { 
+
+  function handleMouseMove(e) {
     const tooltip = document.getElementById('review-tooltip');
-    const x = e.clientX + 15;
-    const y = e.clientY + 15;
+    const x = e.clientX + 14;
+    const y = e.clientY + 14;
     const rect = tooltip.getBoundingClientRect();
-    const finalX = x + rect.width > window.innerWidth ? x - rect.width - 30 : x;
-    const finalY = y + rect.height > window.innerHeight ? y - rect.height - 30 : y;
+    const finalX = x + rect.width > window.innerWidth ? x - rect.width - 28 : x;
+    const finalY = y + rect.height > window.innerHeight ? y - rect.height - 28 : y;
     tooltip.style.left = finalX + 'px';
     tooltip.style.top = finalY + 'px';
   }
-  
-  function highlightDateRange(startDate, endDate, highlight) { 
+
+  function highlightDateRange(startDate, endDate, highlight) {
     const cells = document.querySelectorAll('.day-cell');
     const start = dateKey(parseDate(startDate));
     const end = dateKey(parseDate(endDate));
-    
+
     cells.forEach(cell => {
       const cellDate = cell.dataset.id;
       if (cellDate >= start && cellDate <= end) {
         if (highlight) {
           cell.classList.add('in-range');
-          if (cellDate === start) cell.classList.add('range-start');
-          if (cellDate === end) cell.classList.add('range-end');
         } else {
-          cell.classList.remove('in-range', 'range-start', 'range-end');
+          cell.classList.remove('in-range');
         }
       }
     });
   }
-  
+
   function buildReviewList(reviews) {
     const container = document.getElementById('review-list-container');
     if (!container) return;
     container.innerHTML = '';
-    
+
     const sorted = [...reviews].sort((a, b) => parseDate(b.end_date) - parseDate(a.end_date));
-    
+
     if (sorted.length === 0) {
-        container.innerHTML = '<div class="no-reviews">No review activity in this year.</div>';
-        return;
+      container.innerHTML = '<div class="no-reviews">No completed reviews recorded for this year.</div>';
+      return;
     }
 
     sorted.forEach(review => {
@@ -659,58 +713,59 @@ ul.task-list li input[type="checkbox"] {
       const startDate = parseDate(review.start_date);
       const endDate = parseDate(review.end_date);
       const duration = daysBetween(startDate, endDate);
-      
+
       item.innerHTML = `
-        <div class="review-date-badge">
-          <div class="review-date">${formatDate(endDate)}</div>
-          <span class="review-result-badge ${RESULT_COLORS[review.result]}">${review.result}</span>
-        </div>
         <div class="review-content">
-          <div class="review-journal">${review.journal}</div>
-          <div class="review-paper-title">"${review.paper_title}"</div>
-          <div class="review-duration">📅 ${formatDate(startDate)} → ${formatDate(endDate)} · ${duration} days</div>
+          <div class="review-journal"><i class="bi bi-journal-bookmark"></i> ${review.journal}</div>
+          <div class="review-duration">${formatDate(startDate)} → ${formatDate(endDate)} <span class="bz-dot-sep">·</span> ${duration} days turnaround</div>
+        </div>
+        <div class="review-date-badge">
+          <span class="review-result-badge ${RESULT_COLORS[review.result]}">${review.result}</span>
         </div>
       `;
       container.appendChild(item);
     });
   }
-  
+
   function updateStats(reviews) {
     const counts = { 'Accept': 0, 'Minor Revision': 0, 'Major Revision': 0, 'Reject': 0 };
     reviews.forEach(r => {
       if (counts[r.result] !== undefined) counts[r.result]++;
     });
-    
+
     const totalEl = document.querySelector('.stat-number.total');
     const acceptEl = document.querySelector('.stat-number.accept');
     const minorEl = document.querySelector('.stat-number.minor');
     const majorEl = document.querySelector('.stat-number.major');
     const rejectEl = document.querySelector('.stat-number.reject');
-    
+
     if (totalEl) totalEl.textContent = reviews.length;
     if (acceptEl) acceptEl.textContent = counts['Accept'];
     if (minorEl) minorEl.textContent = counts['Minor Revision'];
     if (majorEl) majorEl.textContent = counts['Major Revision'];
     if (rejectEl) rejectEl.textContent = counts['Reject'];
   }
-  
+
   async function init() {
     allReviews = await loadReviewData();
-    
+
     if (allReviews.length > 0) {
       buildDataCache(allReviews);
+      const years = [];
       allReviews.forEach(r => {
         const startY = parseDate(r.start_date).getFullYear();
         const endY = parseDate(r.end_date).getFullYear();
-        if (startY < minYear) minYear = startY;
-        if (endY > maxYear) maxYear = endY;
+        years.push(startY, endY);
       });
+      minYear = Math.min(...years);
+      maxYear = Math.max(...years, new Date().getFullYear());
+      currentDisplayYear = Math.min(Math.max(currentDisplayYear, minYear), maxYear);
     }
 
     setupNavigation();
-    updateDashboard(); 
+    updateDashboard();
   }
-  
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
@@ -720,22 +775,56 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-</section>
 
-
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
       const i = window.document.createElement("i");
       i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
     }
     setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
@@ -787,13 +876,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -813,7 +903,8 @@ ul.task-list li input[type="checkbox"] {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -822,8 +913,69 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -837,6 +989,7 @@ ul.task-list li input[type="checkbox"] {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -999,44 +1152,54 @@ ul.task-list li input[type="checkbox"] {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1135,17 +1298,39 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p>© 2023–2026 Bohan Zhang</p>
+</div>   
     <div class="nav-footer-center">
-<p>Copyright 2023-2026, Bohan Zhang</p>
-</div>
-    <div class="nav-footer-right">
       &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/angelpone">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/zhangbhangel">
+      <i class="bi bi-twitter-x" role="img" aria-label="X / Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:zhangbohan@buaa.edu.cn">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>
@@ -1153,4 +1338,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
